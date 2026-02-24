@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maephisto</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --fg: #e8e8e0;
+      --accent: #c8f03c;
+      --muted: #444;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'DM Mono', monospace;
+      font-weight: 300;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: left;
+      padding: 2rem;
+    }
+
+    .prompt {
+      color: var(--muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+
+    .prompt span {
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 5rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      transition: color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .links a::before {
+      content: '→';
+      color: var(--accent);
+      transition: transform 0.15s;
+    }
+
+    .links a:hover {
+      color: var(--fg);
+    }
+
+    .links a:hover::before {
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="prompt"><span>~</span> /maephisto</p>
+    <h1>nothing<br>to see<br>here.</h1>
+    <nav class="links">
+      <a href="https://gmail-auto-cleaner.maephisto.dev">gmail-auto-cleaner</a>
+      <a href="https://ps4jailbreak.maephisto.dev">ps4jailbreak-karo-clone-host</a>
+      <a href="https://github.com/maephisto666">github</a>
+    </nav>
+  </div>
+</body>
+</html>
